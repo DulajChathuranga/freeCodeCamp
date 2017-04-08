@@ -1,0 +1,37 @@
+function destroyer(arr)
+{
+  // Remove all the values
+  
+  //Turn to a real array
+  var args = [];
+  args = Array.from(arguments);
+  
+  var filtered = [];
+  var val;
+  
+  //Filter 'argument[0]'(args[0])
+  for (i = 0; i < args[0].length; i++) //args[0]
+    {
+      for(j = 1; j < arguments.length; j++) //args[1] =<
+        {
+          if(args[0][i] == args[j])//Check whether args[0] elements equal to others
+            {
+              break; // Stops if equal, lead to check next args[0][i]
+            }
+          else
+            {
+              val = args[0][i]; 
+              
+              //Push only after checked by all following args
+              if (j == arguments.length - 1) 
+                {
+                  filtered.push(val);
+                }
+              continue;
+            }
+        }
+    }
+  return filtered;
+}
+
+destroyer(["tree", "hamburger", 53], "tree", 53);
