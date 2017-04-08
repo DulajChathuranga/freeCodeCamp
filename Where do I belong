@@ -1,0 +1,31 @@
+
+function getIndexToIns(arr, num)
+{
+  // Find my place in this sorted array.
+  
+  var index;
+  var arrSorted = [];
+  
+  // Sort the array
+  arrSorted = arr.sort(function(a, b)
+  {
+    return a - b;
+  });
+  
+  //Compare with each element
+  for (i = 0; i < arrSorted.length; i++)
+    {
+      if (num <= arrSorted[i])
+        {
+          index = i; //If num <= comparing element, 'num' replace element's index
+          break;
+        }
+      else
+        {
+         index = i+1; //If num > last element, 'num' index = last element index + 1
+        }
+    }
+  return index;
+}
+
+getIndexToIns([10, 20, 30, 40, 50], 60);
