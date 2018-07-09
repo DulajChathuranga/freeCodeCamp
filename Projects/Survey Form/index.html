@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Survey Form - FreeCodeCamp Project</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+
+    <!-- Form -->
+    <div class="form-frame">
+
+        <p id="description">Please, Let us know about your self.</p>
+
+        <form id="survey-form" method="get" action="action_page.php">
+            <div class="block">
+                <div class="labels">
+                    <label for="name" id="name-label">* Name: </label>
+                </div>
+                <div class="inputTab">
+                    <input id="name" type="text" name="name" placeholder="Your Name" required>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="labels">
+                    <label for="email" id="email-label">* Email: </label>
+                </div>
+                <div class="inputTab">
+                    <input id="email" type="email" name="email" placeholder="Your Email" required>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="labels">
+                    <label for="number" id="number-label">* Age: </label>
+                </div>
+                <div class="inputTab">
+                    <input id="number" type="number" name="age" placeholder="Age" min="1" max="120" required>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="labels">
+                    <label for="telephone">Telephone: </label>
+                </div>
+                <div class="inputTab">
+                    <input id="telephone" type="tel" name="telephone" placeholder="+94-00-123-456" minlength="10">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="labels">
+                    <label for="dropdown">Profession: </label>
+                </div>
+                <div class="inputTab">
+                    <select id="dropdown" name="profession">
+                        <option value="student">Student</option>
+                        <option value="frontend">Front-End Developer</option>
+                        <option value="backend">Back-End Developer</option>
+                        <option value="fullstack">Full-Stack Developer</option>
+                        <option value="designer">UI/UX Designer</option>
+                        <option value="datascientist">Data Scientist</option>
+                        <option value="mlengineer">Machine Learning Engineer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="labels">
+                    <label for="os">* Main Operating System: </label>
+                </div>
+                <div class="inputTab">
+                    <ul id="os">
+                        <li><input id="windows" type="radio" name="os" required> <label class="list" for="windows">Windows</label></li>
+                        <li><input id="linux" type="radio" name="os" required> <label class="list" for="linux">Linux</label></li>
+                        <li><input id="mac" type="radio" name="os"required> <label class="list" for="mac" >Mac</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="labels">
+                    <label>Interested Technologies<br>(Check all that apply):</label>
+                </div>
+                <div class="inputTab" for="tech">
+                    <ul id="tech">
+                        <li><input id="react" type="checkbox" name="tech" value="1"> <label class="list" for="react">React</label></li>
+                        <li><input id="angular" type="checkbox" name="tech" value="2"> <label class="list" for="angular">Angular</label></li>
+                        <li><input id="mongodb" type="checkbox" name="tech" value="3"> <label class="list" for="mongodb">MongoDB</label></li>
+                        <li><input id="mysql" type="checkbox" name="tech" value="3"> <label class="list" for="mysql">MySQL</label></li>
+                        <li><input id="nodejs" type="checkbox" name="tech" value="4"> <label class="list" for="nodejs">Node.js</label></li>
+                        <li><input id="expressjs" type="checkbox" name="tech" value="5"> <label class="list" for="expressjs">Express.js</label></li>
+                        <li><input id="javascript" type="checkbox" name="tech" value="6"> <label class="list" for="javascript">JavaScript</label></li>
+                        <li><input id="python" type="checkbox" name="tech" value="7"> <label class="list" for="python">Python</label></li>
+                        <li><input id="java" type="checkbox" name="tech" value="8"> <label class="list" for="java">Java</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="labels">
+                    <label for="comments">Comments:</label>
+                </div>
+                <div class="inputTab">
+                    <textarea id="comments" name="comments" placeholder="Enter your comment here..." minlength="5" maxlength="2000" style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button id="submit" class="button" type="submit"><i class="fa fa-paper-plane"></i> Submit</button>
+            </div>
+        </form>
+    </div>
+    <!--Form End-->
+
+</body>
+</html>
+
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
