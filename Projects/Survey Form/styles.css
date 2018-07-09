@@ -1,0 +1,94 @@
+html, body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1
+{
+    text-align: center;
+}
+
+#description
+{
+    margin-bottom: 20px;
+}
+
+.form-frame
+{
+    width: 75%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+input[type=text], [type=number], [type=email], [type=tel], select, textarea 
+{
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.labels
+{
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    vertical-align: top;
+}
+
+.inputTab
+{
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin-left: 1.5em;
+}
+
+.block
+{
+    margin-bottom: 10px;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0px; /* Remove identation */
+    margin: 0px;
+}
+
+.button
+{
+    border: 0px solid;
+    border-radius: 5px;
+    font-size: 1em;
+    height: 35px;
+    width: 85px;
+    background-color: #59ace0;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.button:hover
+{
+    background-color: white;
+    color: #59ace0;
+    border: 2px solid #59ace0;
+    border-radius: 5px;
+}
+
+.btn
+{
+    text-align: center;
+}
+
+.list
+{
+    font-weight: normal;
+}
